@@ -1,0 +1,6 @@
+pip install pandas
+pip install ntscraper
+brew install mysql
+brew services start mysql
+sudo mysql_secure_installation
+mysql -u root -p
