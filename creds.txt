@@ -1,5 +1,1 @@
-consumer_key = 'K7XfPB6h6nIA3BWsZEKkeEI5R'
-consumer_secret = 'jr6TvenvEl1FJOebha34QYwl2ogn176Fb0LueOaSsDGgFRAnS6'
-access_token = '911980048806219777-wF6bZLkdErFkpqkr39kwxaiV0rCR5qX'
-access_token_secret = 'QxQzAU5ELDpSfJ6sgxXNkyOpSzjJe0zFzxO2OeROI1FoX'
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAGNurgEAAAAAFcwDrZKOAk0WBU8PgDdp8Kg64yo%3DPi9bWrbDBiC48ZDClvur4FoZqUVENf4iUUcciijp55KkanKC6W'
+Api credentials
