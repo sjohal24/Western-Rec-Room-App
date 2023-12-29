@@ -1,0 +1,33 @@
+.outer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.outer-box div {
+  text-align: center;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.2);
+}
+
+.num-people {
+  width: 50%;
+  font-size: 84px;
+  margin-top: 40px;
+  border-radius: 64px;
+  padding: 20px 40px 20px 40px;
+}
+
+.avg-people {
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 20px 60px 20px 60px;
+  border-radius: 64px;
+}
+
+.last-update {
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 20px 60px 20px 60px;
+  border-radius: 64px;
+}
