@@ -4,6 +4,7 @@ import Nav from './Components/Nav';
 import NumPeople from './Components/NumPeople';
 import TimeChart from './Components/TimeChart';
 import Hourly from './Components/Hourly';
+import Daily from './Components/Daily';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ClosingTime />
       <TimeChart />
       <Hourly />
+      <Daily />
     </>
   );
 }
