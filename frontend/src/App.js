@@ -5,6 +5,7 @@ import NumPeople from './Components/NumPeople';
 import TimeChart from './Components/TimeChart';
 import Hourly from './Components/Hourly';
 import Daily from './Components/Daily';
+import YourComponent from './Components/YourComponent';
 
 function App() {
   return (
