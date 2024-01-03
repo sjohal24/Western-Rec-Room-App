@@ -5,6 +5,22 @@ export default function NumPeople() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
+  const checkCapacity = (numOfStudents) => {
+    const capacity = document.querySelector('.avg-people');
+    if (capacity) {
+      capacity.textContent =
+        numOfStudents <= 40
+          ? 'Empty'
+          : numOfStudents <= 60
+          ? 'Light'
+          : numOfStudents <= 100
+          ? 'Moderate'
+          : numOfStudents <= 120
+          ? 'Busy'
+          : 'Very Busy';
+    }
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -19,23 +35,26 @@ export default function NumPeople() {
         const result = await response.json();
         setData(result);
 
-        // Log the fetched data
-        console.log('Fetched Data:', result[0].time, result[0].numOfStudents);
+        // Call the capacity check function with the latest numOfStudents
+        checkCapacity(result[0].numOfStudents);
       } catch (error) {
         setError(error.message);
       }
     };
 
     fetchData();
-  }, []);
+  }, [data]);
 
   // Render based on the data
   return (
     <div className='outer-box'>
       {data ? (
         <>
+          <h1 className='num-people-header'>Current Capacity</h1>
           <div className='num-people'>{data[0].numOfStudents}</div>
-          <div className='avg-people'>Empty</div>
+          <h2 className='avg-people-header'>Capacity Level</h2>
+          <div className='avg-people'>Unknown</div>
+          <h2 className='last-update-header'>Last Updated</h2>
           <div className='last-update'>{data[0].time} EST</div>
         </>
       ) : (
