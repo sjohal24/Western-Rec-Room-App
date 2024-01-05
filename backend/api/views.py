@@ -61,3 +61,11 @@ def get_avg_students_days(request):
             entry['avg_numOfStudents'] = round(entry['avg_numOfStudents'], 1)
   
   return JsonResponse(result_list, safe=False)
+
+def average_students_by_hour(request):
+    # Assuming your TweetData model has fields 'day', 'hour', and 'numOfStudents'
+    queryset = TweetData.objects.values('day', 'hour').annotate(avg_numOfStudents=Avg('numOfStudents')).order_by('avg_numOfStudents')
+
+    data = list(queryset)
+
+    return JsonResponse({'data': data}, safe=False)

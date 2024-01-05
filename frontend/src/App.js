@@ -5,6 +5,9 @@ import NumPeople from './Components/NumPeople';
 import TimeChart from './Components/TimeChart';
 import Hourly from './Components/Hourly';
 import Daily from './Components/Daily';
+import BusyTimesToday from './Components/BusyTimesToday';
+import BusyTimesTomorrow from './Components/BusyTimesTomorrow';
+import BusyTimes from './Components/BusyTimes';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Nav />
       <NumPeople />
       <ClosingTime />
+      <BusyTimesToday />
+      <BusyTimesTomorrow />
+      <BusyTimes />
       <TimeChart />
       <Hourly />
       <Daily />

@@ -1,0 +1,37 @@
+.busy-times-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.busy-times-list {
+  display: inline-block; /* Set to inline-block */
+  padding: 40px;
+  border-radius: 32px;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.2);
+}
+
+.busy-times-list h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+.busy-times-list ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.busy-times-list li {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.busy-times h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 48px;
+  margin-top: 180px;
+}

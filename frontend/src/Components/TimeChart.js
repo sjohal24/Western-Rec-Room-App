@@ -83,7 +83,7 @@ export default function TimeChart() {
 
   return (
     <div className='outer-box'>
-      <title>Weekly Schedule</title>
+      <h1>Weekly Schedule</h1>
       <table>
         <thead>
           <tr>
